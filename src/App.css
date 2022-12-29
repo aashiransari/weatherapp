@@ -1,3 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../src/images/rainBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgGlass{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    margin: 0;
+}
+.bgGlass input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid grey;
+    width: 300px;
+    margin: 50px 10px;
+    color: white;
+    outline: none;
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: .5rem;
+    letter-spacing: 0.1rem;
+}
+.weatherData{
+    padding: 50px;
+}
+
 .weather-bg{
     background: url("https://www.accuweather.com/images/hero/4/1440x450.jpg");
     height: 50vh;
@@ -6,14 +37,26 @@
     justify-content: center;
     align-items: center;
 }
-.heading{
+.title, .celciusData, .cityName{
     color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 50px;
+}
+.celciusData{
+    font-size: 80px;
     font-weight: 700;
+}
+.cityName{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
 }
 .weatherResultBox{
     margin: auto;
-    width: 500px;
+    width: 400px;
     height: 300px;
+    border: 1px solid red;
 }
 .weatherIcon{
     margin-top: 2rem;
@@ -26,4 +69,19 @@
 .weatherTemp{
     font-size: 55px;
     font-weight: 700;
+}
+.disp{
+    display: inline !important;
+}
+@media screen and (max-width:600px) {
+    .disp{
+        display: block !important;
+    }
+    h1{
+        margin: 10px 30px !important;
+    }
+    h2{
+        margin-left: 30px !important;
+        margin-top: 0px !important;
+    }
 }
